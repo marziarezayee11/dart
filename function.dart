@@ -10,7 +10,16 @@ int sum(int a,int b){
 String function(){
     return "fetching the best server";
 }
+String greet( String name,String lastName){
+    return"hi dear $name $lastName";
+}
+void introduce(String name ,[int? age]){
+print("hello im $name and im $age year old");
+}
 void main(){
+    introduce("ali",17);
+     String result2 = greet("ali","rezayee");
+     print(result2);
     greeting();
 String result = ali();
 print(result);
