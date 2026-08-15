@@ -16,7 +16,13 @@ String greet( String name,String lastName){
 void introduce(String name ,[int? age]){
 print("hello im $name and im $age year old");
 }
+String name()=> "hi ali";
+String name1(String name)=>"hi $name";
 void main(){
+    String h1 = name1("sama");
+    print(h1);
+    String hi = name();
+    print(hi);
     introduce("ali",17);
      String result2 = greet("ali","rezayee");
      print(result2);
