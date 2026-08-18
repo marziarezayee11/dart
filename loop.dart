@@ -43,12 +43,12 @@ print(num1 += a);
    }
 
    List<int>scores = [56,20,60,70, 48, 89,];
-   for(int i = 0 ; i<scores.lenght; i++){
+   for(int i = 0 ; i<scores.length; i++){
     if(scores[i]<50){
-        print("there st withe ID ${i+1}you should try ");
+        print("there student withe ID ${i+1} you should try hard because you got ${scores[i]} score ");
     }
     if(scores[i]>=60){
-        print("there st withe ID ${i+1}congratulation you got ${scores}");
+        print("there Student withe ID ${i+1} congratulation you got ${scores[i]}");
 
     }
    }
