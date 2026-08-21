@@ -40,10 +40,10 @@ void main() {
   List<num> prices = [230, 340, 560, 600, 690, 670, 540];
   List<num> curretP = prices.map((price) => price - (price * 5) / 100).toList();
   print(curretP);
-  // List<num> salaries = [12000, 14000, 18000, 20000];
-  // List<num> salariesAfter = salaries
-  //     .map((salari) => salari + (salari * 6) / 100)
-  //     .toList();
-  // print("salaries after adding the bonus gose like this$salariesAfter");
-  
+  List<num> salaries = [12000, 14000, 18000, 20000];
+  List<num> salariesAfter = salaries
+      .map((salari) => salari + (salari * 6) / 100)
+      .toList();
+  print("salaries after adding the bonus gose like this$salariesAfter");
+  print(prices.length);
 }
