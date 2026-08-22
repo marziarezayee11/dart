@@ -1,3 +1,5 @@
+import 'dart:vmservice_io';
+
 void main() {
   List<int> numbers = [12, 15, 17, 76, 80];
   print(numbers.length);
@@ -46,4 +48,15 @@ void main() {
       .toList();
   print("salaries after adding the bonus gose like this$salariesAfter");
   print(prices.length);
+  List<dynamic> nesedlist = [
+    [12, 23, 34],
+    [57, 76, 85],
+  ];
+  List<dynamic> normallist = nesedlist.expand((x) => x).toList();
+  print(normallist);
+  List<int> number = [3, 8, 9, 0, 6, 67, 54];
+  List<int> limitnum = number.take(5).toList();
+  print(limitnum);
+  List<int> filthernum = number.takeWhile((t) => t % 2 == 0).toList();
+  print(filthernum);
 }
